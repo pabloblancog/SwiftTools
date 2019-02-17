@@ -12,17 +12,15 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var titleLabel: UILabel! {
         didSet {
-            titleLabel.setProperties(withText: Localization.Label.Intro.title.localized,
-                                     font: Fonts.heading1,
-                                     textColor: Colors.primaryColor.base)
+            titleLabel.text = Localization.Label.Intro.title.localized
+            titleLabel.font = Fonts.heading1
+            titleLabel.textColor = Colors.primaryColor.base
         }
     }
     
     @IBOutlet weak var headerImageView: UIImageView! {
         didSet {
             headerImageView.image = Assets.Images.header.image
-            headerImageView.addBorder(with: 2.0,
-                                      color: Colors.secondaryColor.alpha40.cgColor)
         }
     }
     
