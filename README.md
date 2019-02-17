@@ -11,7 +11,7 @@ Tools for an easy management of:
 
 Add your font configuration to ```Fonts.swift``` and access it like this:
 
-```
+```swift
 titleLabel.font = Fonts.heading1
 ```
 
@@ -20,7 +20,7 @@ titleLabel.font = Fonts.heading1
 
 Add your color palette configuration to ```Colors.swift``` and access it like this:
 
-```
+```swift
 titleLabel.textColor = Colors.primaryColor.base
 ```
 
@@ -29,7 +29,7 @@ titleLabel.textColor = Colors.primaryColor.base
 
 Add your assets configuration to ```Assets.swift```and access it like this:
 
-```
+```swift
 headerImageView.image = Assets.Images.header.image
 ```
 
@@ -38,6 +38,6 @@ headerImageView.image = Assets.Images.header.image
 
 Create typed variables into separated sections in ```Localization.swift```, so you can access in a proper way to the localized strings:
 
-```
+```swift
 titleLabel.text = Localization.Label.Intro.title.localized
 ```
