@@ -161,7 +161,6 @@
 				8BC99791221898F600C01704 /* Localizable.strings */,
 			);
 			name = Localization;
-			path = "New Group";
 			sourceTree = "<group>";
 		};
 		8B92A00C2218975F00F58AB8 /* Assets */ = {
@@ -170,7 +169,6 @@
 				8B92A00E2218978600F58AB8 /* Assets.swift */,
 			);
 			name = Assets;
-			path = "New Group1";
 			sourceTree = "<group>";
 		};
 		8B92A00D2218976800F58AB8 /* UI Styling */ = {
@@ -180,7 +178,6 @@
 				8BC997862218984200C01704 /* Fonts.swift */,
 			);
 			name = "UI Styling";
-			path = Colors;
 			sourceTree = "<group>";
 		};
 		8BC9979322189A4400C01704 /* Protocols */ = {
