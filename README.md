@@ -2,7 +2,7 @@
 
 Tools for an easy management of:
 - Fonts
-- Color palette
+- Colors
 - Assets
 - Localized strings
 
@@ -16,21 +16,34 @@ titleLabel.font = Fonts.heading1
 ```
 
 
-## Color palette
+## Colors
 
 Add your color palette configuration to ```Colors.swift``` and access it like this:
 
+Alpha 100%
 ```swift
+let titleLabel = UILabel()
 titleLabel.textColor = Colors.primaryColor.base
 ```
 
+Alpha 40%
+```swift
+let titleLabel = UILabel()
+titleLabel.textColor = Colors.primaryColor.alpha40
+```
 
 ## Assets
 
 Add your assets configuration to ```Assets.swift```and access it like this:
 
+- UIImage:
 ```swift
-headerImageView.image = Assets.Images.header.image
+let headerImage: UIImage = Assets.Images.header.image
+```
+
+- String image name:
+```swift
+let headerImageName: String = Assets.Images.header.name
 ```
 
 
@@ -39,5 +52,6 @@ headerImageView.image = Assets.Images.header.image
 Create typed variables into separated sections in ```Localization.swift```, so you can access in a proper way to the localized strings:
 
 ```swift
+let titleLabel = UILabel()
 titleLabel.text = Localization.Label.Intro.title.localized
 ```
