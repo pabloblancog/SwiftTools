@@ -1,0 +1,11 @@
+/* 
+  Localizable.strings
+  Tools
+
+  Created by Pablo Blanco González on 16/02/2019.
+  Copyright © 2019 Pablo Blanco González. All rights reserved.
+*/
+
+// label titles
+"label.intro.title" = "Bienvenido al proyecto 'Tools'";
+"label.intro.subtitle" = "Subscríbete";
