@@ -12,14 +12,14 @@ import UIKit
 class Colors {
     
     // Main colors
-    public static let primaryColor: Color = MainColors.primary.standardColor
-    public static let secondaryColor: Color = MainColors.secondary.standardColor
+    public static let primaryColor = MainColors.primary.standardColor
+    public static let secondaryColor = MainColors.secondary.standardColor
     
     // Background
-    public static let backgroundColor: Color = Background.primary.standardColor
-    public static let cellBackgroundColor: Color = Background.cell.standardColor
+    public static let backgroundColor = Background.primary.standardColor
+    public static let cellBackgroundColor = Background.cell.standardColor
     
-    public static let shadowColor: Color = Others.shadow.standardColor
+    public static let shadowColor = Others.shadow.standardColor
     
     private enum MainColors: String, Colorable {
         case primary = "ff3465"
@@ -36,7 +36,7 @@ class Colors {
     }
 }
 
-struct StandardColor: Color {
+struct StandardColor: UIColorProtocol {
     private struct Constants {
         static let alpha80: CGFloat = 0.8
         static let alpha60: CGFloat = 0.6
@@ -58,7 +58,7 @@ struct StandardColor: Color {
     }
 }
 
-public protocol Color {
+public protocol UIColorProtocol {
     var base: UIColor { get }
     var alpha80: UIColor { get }
     var alpha60: UIColor { get }
