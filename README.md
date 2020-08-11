@@ -1,4 +1,4 @@
-# Swift tools
+# SwiftTools
 
 Tools for an easy management of:
 - Fonts
